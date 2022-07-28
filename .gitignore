@@ -86,3 +86,4 @@ coverage/
 coverage.info
 configure~
 fuzz-*.log
+/build
