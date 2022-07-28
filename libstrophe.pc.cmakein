@@ -1,0 +1,15 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}/bin
+libdir=${prefix}/lib
+sharedlibdir=${libdir}
+includedir=${prefix}/include
+
+Name: libstrophe
+Description: A simple, lightweight C library for writing XMPP clients
+URL: http://strophe.im/libstrophe/
+Version: @STROPHE_VERSION@
+Requires:
+Requires.private: @STROPHE_PC_REQUIRES@
+Libs: -L${libdir} -lstrophe
+Libs.private: @STROPHE_PC_LIBS@
+Cflags: -I${includedir}
